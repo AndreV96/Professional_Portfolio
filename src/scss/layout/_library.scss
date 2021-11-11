@@ -1,0 +1,35 @@
+.main-content-div {
+    .about-me-h2-div {
+        margin-top: 2rem;
+    }
+    .work-p-div {
+        margin-top: 2rem;
+    }
+    h2 {
+        display: inline-block;
+        border-bottom: thick solid $thirdColor;
+        padding: 1rem 1rem 1rem;
+    }
+    @include tablet {
+        .about-me-section, .work-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            .about-me-h2-div, .work-h2-div {
+                flex: 1 1 20rem;
+                margin-right: 1rem;
+                border-right: thick solid $thirdColor;
+                h2 {
+                    border-bottom: none;
+                }
+            }
+            .about-me-p-div, .work-p-div {
+                width: 100%;
+                flex: 2 1 auto;
+                overflow-wrap: normal;
+            }
+        }
+    }
+    
+}
+

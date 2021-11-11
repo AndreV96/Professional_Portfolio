@@ -406,7 +406,6 @@ a:hover {
 }
 
 .header-section div {
-  padding: 1rem 0;
   background-color: #31343d;
 }
 .header-section .main-heading-and-nav-div {
@@ -419,13 +418,16 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem 0;
 }
 .header-section .main-nav a {
   color: #92cccd;
   padding: 5px 1rem;
+  margin: 5px 0;
   border-bottom: 3px solid #92cccd;
 }
 .header-section h1 {
+  padding: 1rem 0;
   width: 100%;
   color: #31343d;
   background-color: #92cccd;
@@ -449,9 +451,11 @@ a:hover {
   display: inline-block;
   background-color: #92cccd;
   padding: 0.5rem;
+  margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .header-section .main-heading-and-nav-div {
+    padding: 1rem 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -461,14 +465,14 @@ a:hover {
     display: flex;
     flex-direction: row;
   }
+  .header-section .main-nav a {
+    margin: 0 1rem;
+  }
   .header-section h1 {
     display: inline-block;
     width: auto;
     padding-left: 5rem;
     padding-right: 1rem;
-  }
-  .header-section a {
-    margin: 0 1rem;
   }
   .header-section .header-background-image {
     justify-content: flex-end;
@@ -480,5 +484,37 @@ a:hover {
 @media (min-width: 1024px) {
   .header-section .main-heading-and-nav-div {
     padding-right: 5rem;
+  }
+}
+
+.main-content-div .about-me-h2-div {
+  margin-top: 2rem;
+}
+.main-content-div .work-p-div {
+  margin-top: 2rem;
+}
+.main-content-div h2 {
+  display: inline-block;
+  border-bottom: thick solid #425675;
+  padding: 1rem 1rem 1rem;
+}
+@media (min-width: 768px) {
+  .main-content-div .about-me-section, .main-content-div .work-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .main-content-div .about-me-section .about-me-h2-div, .main-content-div .about-me-section .work-h2-div, .main-content-div .work-section .about-me-h2-div, .main-content-div .work-section .work-h2-div {
+    flex: 1 1 20rem;
+    margin-right: 1rem;
+    border-right: thick solid #425675;
+  }
+  .main-content-div .about-me-section .about-me-h2-div h2, .main-content-div .about-me-section .work-h2-div h2, .main-content-div .work-section .about-me-h2-div h2, .main-content-div .work-section .work-h2-div h2 {
+    border-bottom: none;
+  }
+  .main-content-div .about-me-section .about-me-p-div, .main-content-div .about-me-section .work-p-div, .main-content-div .work-section .about-me-p-div, .main-content-div .work-section .work-p-div {
+    width: 100%;
+    flex: 2 1 auto;
+    overflow-wrap: normal;
   }
 }

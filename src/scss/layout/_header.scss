@@ -1,6 +1,5 @@
 .header-section {   
     div {
-        padding: 1rem 0;
         background-color: $fourthColor;
     }
     .main-heading-and-nav-div {
@@ -13,13 +12,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 2rem 0 ;
         a {
             color: $secondColor;
             padding: 5px 1rem;
+            margin: 5px 0;
             border-bottom: 3px solid $secondColor;
         }
     }
     h1 {
+        padding: 1rem 0;
         width: 100%;
         color: $fourthColor;
         background-color: $secondColor;
@@ -43,11 +45,13 @@
             display: inline-block;
             background-color: $secondColor;
             padding: .5rem;
+            margin-bottom: 1rem;
         }
     }
     //Media Queries
-    @include tablet {
+    @include tablet {       
         .main-heading-and-nav-div {
+            padding: 1rem 0;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
@@ -56,15 +60,15 @@
         .main-nav {
             display: flex;
             flex-direction: row;
+            a {
+                margin: 0 1rem;
+            }
         }
         h1 {
             display: inline-block;
             width: auto;
             padding-left: 5rem;
             padding-right: 1rem;
-        }
-        a {
-            margin: 0 1rem;
         }
         .header-background-image {
             justify-content: flex-end;
