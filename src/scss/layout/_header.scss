@@ -1,0 +1,81 @@
+.header-section {   
+    div {
+        padding: 1rem 0;
+        background-color: $fourthColor;
+    }
+    .main-heading-and-nav-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a {
+            color: $secondColor;
+            padding: 5px 1rem;
+            border-bottom: 3px solid $secondColor;
+        }
+    }
+    h1 {
+        width: 100%;
+        color: $fourthColor;
+        background-color: $secondColor;
+    }
+    a:hover {
+        color: $fourthColor;
+        background-color: $secondColor;
+        border-bottom: 3px solid $fourthColor;
+        font-size: 150%;
+        transition: all 0.5s ease-in-out;
+        box-shadow: inset 0px 0px 8px rgba(146,204,205,255), 0 0 15px rgba(146,204,205,255);
+    }
+    .header-background-image {
+        background-image: url(../../../build/img/cover6.jpg);
+        // background-repeat: no-repeat;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        h2 {
+            display: inline-block;
+            background-color: $secondColor;
+            padding: .5rem;
+        }
+    }
+    //Media Queries
+    @include tablet {
+        .main-heading-and-nav-div {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 3rem;
+        }
+        .main-nav {
+            display: flex;
+            flex-direction: row;
+        }
+        h1 {
+            display: inline-block;
+            width: auto;
+            padding-left: 5rem;
+            padding-right: 1rem;
+        }
+        a {
+            margin: 0 1rem;
+        }
+        .header-background-image {
+            justify-content: flex-end;
+            h2 {
+                margin: 2rem 1rem;
+            }
+        }
+    }
+    @include laptop {
+        .main-heading-and-nav-div {
+            padding-right: 5rem
+        }
+    }
+}

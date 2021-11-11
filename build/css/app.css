@@ -353,7 +353,7 @@ body {
 
 p {
   font-size: 2rem;
-  color: #000000;
+  color: #31343d;
 }
 
 .contenedor {
@@ -374,6 +374,7 @@ img {
 }
 
 h1, h2, h3 {
+  color: #425675;
   margin: 0;
 }
 
@@ -402,4 +403,82 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
+}
+
+.header-section div {
+  padding: 1rem 0;
+  background-color: #31343d;
+}
+.header-section .main-heading-and-nav-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.header-section .main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-section .main-nav a {
+  color: #92cccd;
+  padding: 5px 1rem;
+  border-bottom: 3px solid #92cccd;
+}
+.header-section h1 {
+  width: 100%;
+  color: #31343d;
+  background-color: #92cccd;
+}
+.header-section a:hover {
+  color: #31343d;
+  background-color: #92cccd;
+  border-bottom: 3px solid #31343d;
+  font-size: 150%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: inset 0px 0px 8px #92cccd, 0 0 15px #92cccd;
+}
+.header-section .header-background-image {
+  background-image: url(../../../build/img/cover6.jpg);
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header-section .header-background-image h2 {
+  display: inline-block;
+  background-color: #92cccd;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  .header-section .main-heading-and-nav-div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3rem;
+  }
+  .header-section .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .header-section h1 {
+    display: inline-block;
+    width: auto;
+    padding-left: 5rem;
+    padding-right: 1rem;
+  }
+  .header-section a {
+    margin: 0 1rem;
+  }
+  .header-section .header-background-image {
+    justify-content: flex-end;
+  }
+  .header-section .header-background-image h2 {
+    margin: 2rem 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .header-section .main-heading-and-nav-div {
+    padding-right: 5rem;
+  }
 }

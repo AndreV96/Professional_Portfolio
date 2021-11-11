@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; //10px = 1rem
     box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 p {
     font-size: 2rem;
-    color: $negro;
+    color: $fourthColor;
 }   
 .contenedor {
     max-width: 120rem;
@@ -34,6 +34,7 @@ img {
     display: block;
 }
 h1, h2, h3 {
+    color: $thirdColor;
     margin: 0;
 }
 h1 {
