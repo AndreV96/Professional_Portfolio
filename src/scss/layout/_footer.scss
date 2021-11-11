@@ -1,7 +1,5 @@
 .contact-me-footer {
     background-color: $fourthColor;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 2rem 0 ;
     nav {
@@ -22,6 +20,7 @@
         width: 100%; //Why is not taking all the width space?
         color: $fourthColor;
         background-color: $secondColor;
+        text-align: center;
     }
     a:hover {
         color: $fourthColor;
@@ -30,5 +29,25 @@
         font-size: 150%;
         transition: all 0.5s ease-in-out;
         box-shadow: inset 0px 0px 8px rgba(146,204,205,255), 0 0 15px rgba(146,204,205,255);
+    }
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0 1rem 2rem;
+        nav {
+            display: flex;
+            flex-direction: row;
+        }
+        a {
+            margin-right: 2rem;
+        }
+        h2 {
+            font-size: 26px;
+            padding-right: 3rem;
+        }
+    }
+    @include laptop {
+        padding-left: 5rem;
     }
 }

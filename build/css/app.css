@@ -409,6 +409,7 @@ a:hover {
   background-color: #31343d;
 }
 .header-section .main-heading-and-nav-div {
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -459,7 +460,7 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-right: 3rem;
+    padding-right: 2rem;
   }
   .header-section .main-nav {
     display: flex;
@@ -521,8 +522,6 @@ a:hover {
 
 .contact-me-footer {
   background-color: #31343d;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 2rem 0;
 }
@@ -544,6 +543,7 @@ a:hover {
   width: 100%;
   color: #31343d;
   background-color: #92cccd;
+  text-align: center;
 }
 .contact-me-footer a:hover {
   color: #31343d;
@@ -552,4 +552,28 @@ a:hover {
   font-size: 150%;
   transition: all 0.5s ease-in-out;
   box-shadow: inset 0px 0px 8px #92cccd, 0 0 15px #92cccd;
+}
+@media (min-width: 768px) {
+  .contact-me-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 2rem;
+  }
+  .contact-me-footer nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-me-footer a {
+    margin-right: 2rem;
+  }
+  .contact-me-footer h2 {
+    font-size: 26px;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-me-footer {
+    padding-left: 5rem;
+  }
 }
