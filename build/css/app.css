@@ -518,3 +518,38 @@ a:hover {
     overflow-wrap: normal;
   }
 }
+
+.contact-me-footer {
+  background-color: #31343d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+.contact-me-footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+.contact-me-footer a {
+  color: #92cccd;
+  padding: 5px 1rem;
+  margin: 5px 0;
+  border-bottom: 3px solid #92cccd;
+}
+.contact-me-footer h2 {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  color: #31343d;
+  background-color: #92cccd;
+}
+.contact-me-footer a:hover {
+  color: #31343d;
+  background-color: #92cccd;
+  border-bottom: 3px solid #31343d;
+  font-size: 150%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: inset 0px 0px 8px #92cccd, 0 0 15px #92cccd;
+}

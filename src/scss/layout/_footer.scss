@@ -1,0 +1,34 @@
+.contact-me-footer {
+    background-color: $fourthColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 ;
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0 ;
+    }
+    a {
+        color: $secondColor;
+        padding: 5px 1rem;
+        margin: 5px 0;
+        border-bottom: 3px solid $secondColor;
+    }
+    h2 {
+        display: block;
+        padding: 1rem;
+        width: 100%; //Why is not taking all the width space?
+        color: $fourthColor;
+        background-color: $secondColor;
+    }
+    a:hover {
+        color: $fourthColor;
+        background-color: $secondColor;
+        border-bottom: 3px solid $fourthColor;
+        font-size: 150%;
+        transition: all 0.5s ease-in-out;
+        box-shadow: inset 0px 0px 8px rgba(146,204,205,255), 0 0 15px rgba(146,204,205,255);
+    }
+}
