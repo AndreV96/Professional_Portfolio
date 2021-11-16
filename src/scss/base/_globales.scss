@@ -19,7 +19,7 @@ p {
     font-size: 2rem;
     color: $fourthColor;
 }   
-.contenedor {
+.container {
     max-width: 120rem;
     width: 95%;
     margin: 0 auto;
@@ -34,7 +34,6 @@ img {
     display: block;
 }
 h1, h2, h3 {
-    color: $thirdColor;
     margin: 0;
 }
 h1 {

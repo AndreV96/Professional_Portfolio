@@ -1,51 +1,65 @@
-.contact-me-footer {
+.contact-me__footer {
+    display: flex;
+    flex-direction: column;
     background-color: $fourthColor;
     align-items: center;
     padding: 2rem 0 ;
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem 0 ;
+    .contact-me__div--heading {
+        order: 1;
+        width: 100%;
+        h2 {
+            padding: 1rem;
+            color: $fourthColor;
+            background-color: $secondColor;
+            text-align: center;
+        }
     }
-    a {
-        color: $secondColor;
-        padding: 5px 1rem;
-        margin: 5px 0;
-        border-bottom: 3px solid $secondColor;
+    .contact-me__div--navigation {
+        order: 2;
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0 ;
+        }
+        a {
+            color: $secondColor;
+            padding: 5px 1rem;
+            margin: 5px 0;
+            border-bottom: 3px solid $secondColor;
+        }
+        a:hover {
+            color: $fourthColor;
+            background-color: $secondColor;
+            border-bottom: 3px solid $fourthColor;
+            transition: all 0.5s ease-in-out;
+            box-shadow: inset 0px 0px 8px rgba(146,204,205,255), 0 0 15px rgba(146,204,205,255);
+        }
     }
-    h2 {
-        display: block;
-        padding: 1rem;
-        width: 100%; //Why is not taking all the width space?
-        color: $fourthColor;
-        background-color: $secondColor;
-        text-align: center;
-    }
-    a:hover {
-        color: $fourthColor;
-        background-color: $secondColor;
-        border-bottom: 3px solid $fourthColor;
-        font-size: 150%;
-        transition: all 0.5s ease-in-out;
-        box-shadow: inset 0px 0px 8px rgba(146,204,205,255), 0 0 15px rgba(146,204,205,255);
-    }
+    
     @include tablet {
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 0 1rem 2rem;
-        nav {
-            display: flex;
-            flex-direction: row;
+        .contact-me__div--navigation {
+            order: 0;
+            nav {
+                display: flex;
+                flex-direction: row;
+            }
+            a {
+                margin-right: 2rem;
+            }
         }
-        a {
-            margin-right: 2rem;
+        .contact-me__div--heading {
+            width: auto;
+            h2 {
+                font-size: 26px;
+                padding-right: 5rem;
+            }
         }
-        h2 {
-            font-size: 26px;
-            padding-right: 3rem;
-        }
+        
     }
     @include laptop {
         padding-left: 5rem;

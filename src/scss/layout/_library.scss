@@ -1,34 +1,50 @@
-.main-content-div {
-    .about-me-h2-div {
+.main-content__div {
+    .about-me__div--section-heading {
         margin-top: 2rem;
-    }
-    .work-p-div {
-        margin-top: 2rem;
-    }
+    }    
     h2 {
+        color: $mainColor;
         display: inline-block;
-        border-bottom: thick solid $thirdColor;
+        border-bottom: thick solid $mainColor; 
         padding: 1rem 1rem 1rem;
     }
+    .work__div--webpages-library{
+        margin-top: 2rem;
+    }
+    .work__divs--all-webpages {
+        height: 20rem;
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
+        background-image: url(../../../build/img/cover1.jpg);
+        border: thick solid $secondColor;
+        display: flex;
+        align-items: flex-end;
+        .work__divs--all-webpages-title-cards {
+            color: $fourthColor;
+            background-color: $secondColor;
+            padding: 1rem;
+            display: inline-block;
+        }
+    }
     @include tablet {
-        .about-me-section, .work-section {
+        .about-me__section, .work__section {
             display: flex;
             justify-content: space-between;
             margin-bottom: 3rem;
-            .about-me-h2-div, .work-h2-div {
-                flex: 1 1 20rem;
-                margin-right: 1rem;
-                border-right: thick solid $thirdColor;
-                h2 {
-                    border-bottom: none;
-                }
-            }
-            .about-me-p-div, .work-p-div {
-                width: 100%;
-                flex: 2 1 auto;
-                overflow-wrap: normal;
+        }
+        .about-me__div--section-heading, .work__div--section-heading {
+            flex: 1 1 20rem;
+            margin-right: 1rem;
+            border-right: thick solid $mainColor;
+            h2 {
+                border-bottom: none;
             }
         }
+        .about-me__div--text, .work__div--webpages-library {
+            width: 100%;
+            flex: 2 1 auto;
+        }
+        
     }
     
 }
