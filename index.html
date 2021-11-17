@@ -14,13 +14,17 @@
     <header>
         <section class="header__section">
             <div class="header__div--main-heading-and-navigation">
-                <h1>André Vega</h1>
-            <nav class="header__nav">                
-                <a href="index.html">About Me</a>
-                <a href="index.html">Work</a>
-                <a href="index.html">Contact Me</a>
-                <a href="index.html">Resume</a>
-            </nav>
+                <h1>André Vega</h1>                
+                <picture class="header__picture">
+                    <source srcset="build/img/foto.avif" type="image/avif">
+                    <source srcset="build/img/foto.webp" type="image/webp">
+                    <img loading="lazy" width="200" height="300" src="build/img/foto.jpg" alt="">
+                </picture>
+                <nav class="header__nav">                
+                    <a href="#about-me">About Me</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact-me">Contact Me</a>
+                </nav>
             </div>
             <div class="header__div--background-image">
                 <h2>“It is not enough for code to work.”  <br><span class="header__span--main-quote"> -Robert C. Martin</span></h2>
@@ -28,7 +32,7 @@
         </section>
     </header>   
     <div class="main-content__div">
-        <section class="about-me__section container">
+        <section id="about-me" class="about-me__section container">
             <div class="about-me__div--section-heading">   
                 <h2>About Me</h2>
             </div>
@@ -38,36 +42,41 @@
             </div>
         </section>
     
-        <section class="work__section container">
+        <section id="work" class="work__section container">
             <div class="work__div--section-heading">   
                 <h2>Work</h2>
             </div>
             <div class="work__div--webpages-library">
-                <div class="work__divs--all-webpages">
-                    <div class="work__divs--all-webpages-title-cards">
+                <div class="work__divs--all-webpages work__div--jardines-de-la-sierra-bg-img">
+                    <a class="work__a--links-to-webpages" href="https://andrev96.github.io/Pagina-HTML_CSS-Jardines-de-la-Sierra/"></a>
+                    <div class="work__divs--all-webpages-title-cards">                        
                         <h3>Jardines de la Sierra</h3>
                         <p>HTML/CSS</p>
                     </div>
                 </div>
-                <div class="work__divs--all-webpages">
+                <div class="work__divs--all-webpages work__div--accesorios-de-boda-bg-img">
+                    <a class="work__a--links-to-webpages" href="https://andrev96.github.io/Vestidos-y-Accesorios-de-Boda/"></a>
                     <div class="work__divs--all-webpages-title-cards">
                         <h3>Accesorios de Boda</h3>
                         <p>HTML/SASS/JSon/Gulp</p>
                     </div>
                 </div>
-                <div class="work__divs--all-webpages">
+                <div class="work__divs--all-webpages work__div--css-cheatsheet-bg-img">
+                    <a class="work__a--links-to-webpages" href="https://andrev96.github.io/CSS-Cheat-Sheet/"></a>
                     <div class="work__divs--all-webpages-title-cards">                       
                         <h3>CSS Cheatsheet</h3>
                         <p>HTML/CSS</p>
                     </div>
                 </div>
                 <div class="work__divs--all-webpages">
+                    <a class="work__a--links-to-webpages"></a>
                     <div class="work__divs--all-webpages-title-cards">
                         <h3>Calculator</h3>
                         <p>React/JavaScript/CSS</p>                  
                     </div>
                 </div>
                 <div class="work__divs--all-webpages">
+                    <a class="work__a--links-to-webpages"></a>
                     <div class="work__divs--all-webpages-title-cards">
                         <h3>Pastel Puzzles</h3>
                         <p>MERN Stack</p>
@@ -77,13 +86,13 @@
         </section>
     </div>
     
-    <footer class="contact-me__footer">
+    <footer id="contact-me" class="contact-me__footer">
         <div class="contact-me__div--navigation">
             <nav class="footer__nav">
-                <a href="index.html">442.205.2403</a>
-                <a href="index.html">ventaslederer@hotmail.com</a>
+                <a href="https://wa.me/+524422052403">442.205.2403</a>
+                <a href="mailto:ventaslederer@hotmail.com">ventaslederer@hotmail.com</a>
                 <a href="https://github.com/AndreV96">GitHub</a>
-                <a href="index.html">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/andre-vega-lederer/">LinkedIn</a>
             </nav>
         </div>
         <div class="contact-me__div--heading">   
