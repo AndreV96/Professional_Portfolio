@@ -516,7 +516,7 @@ a:hover {
   height: 20rem;
   padding-bottom: 2rem;
   margin-bottom: 1rem;
-  background-image: url(../../../build/img/cover1.jpg);
+  background-image: url(../../build/img/cover1.jpg);
   background-size: cover;
   border: thick solid #92cccd;
   display: flex;
@@ -535,15 +535,15 @@ a:hover {
   height: 100%;
 }
 .main-content__div .work__div--jardines-de-la-sierra-bg-img {
-  background-image: url(../../../build/img/BG.jpg);
+  background-image: url(../../build/img/BG.jpg);
   background-position: bottom;
 }
 .main-content__div .work__div--accesorios-de-boda-bg-img {
-  background-image: url(../../../build/img/logo_prueba.jpg);
+  background-image: url(../../build/img/logo_prueba.jpg);
   background-position: center;
 }
 .main-content__div .work__div--css-cheatsheet-bg-img {
-  background-image: url(../../../build/img/cheatsheet.jpg);
+  background-image: url(../../build/img/cheatsheet.jpg);
   background-position: center;
 }
 @media (min-width: 768px) {

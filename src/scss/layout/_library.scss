@@ -16,7 +16,7 @@
         height: 20rem;
         padding-bottom: 2rem;
         margin-bottom: 1rem;
-        background-image: url(../../../build/img/cover1.jpg);
+        background-image: url(../../build/img/cover1.jpg);
         background-size: cover;
         border: thick solid $secondColor;
         display: flex;
@@ -35,15 +35,15 @@
         }
     }
     .work__div--jardines-de-la-sierra-bg-img {
-        background-image: url(../../../build/img/BG.jpg);
+        background-image: url(../../build/img/BG.jpg);
         background-position: bottom;
     }
     .work__div--accesorios-de-boda-bg-img {
-        background-image: url(../../../build/img/logo_prueba.jpg);
+        background-image: url(../../build/img/logo_prueba.jpg);
         background-position: center;
     }
     .work__div--css-cheatsheet-bg-img {
-        background-image: url(../../../build/img/cheatsheet.jpg);   
+        background-image: url(../../build/img/cheatsheet.jpg);   
         background-position: center;
     }
     @include tablet {
