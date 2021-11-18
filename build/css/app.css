@@ -447,7 +447,7 @@ a:hover {
   box-shadow: inset 0px 0px 8px #92cccd, 0 0 15px #92cccd;
 }
 .header__section .header__div--background-image {
-  background-image: url(../../../build/img/cover6.jpg);
+  background-image: url(../../build/img/cover6.jpg);
   height: 15rem;
   display: flex;
   justify-content: center;
