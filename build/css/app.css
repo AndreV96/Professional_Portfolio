@@ -428,10 +428,23 @@ a:hover {
   padding: 2rem 0;
 }
 .header__section .header__nav a {
+  position: relative;
   color: #92cccd;
   padding: 5px 1rem;
-  margin: 5px 0;
-  border-bottom: 3px solid #92cccd;
+  margin: 1rem 0;
+}
+.header__section .header__nav a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #92cccd;
+  bottom: -1rem;
+  left: 0;
+}
+.header__section .header__nav a:hover::before {
+  width: 0%;
+  transition: all 0.5s ease-in-out;
 }
 .header__section h1 {
   padding: 1rem 0;
@@ -442,7 +455,6 @@ a:hover {
 .header__section a:hover {
   color: #31343d;
   background-color: #92cccd;
-  border-bottom: 3px solid #31343d;
   transition: all 0.5s ease-in-out;
   box-shadow: inset 0px 0px 8px #92cccd, 0 0 15px #92cccd;
 }
@@ -513,6 +525,8 @@ a:hover {
 }
 .main-content__div p {
   font-size: 15px;
+  line-height: 2rem;
+  padding-top: 1rem;
 }
 .main-content__div .work__div--webpages-library {
   margin-top: 2rem;
@@ -619,17 +633,29 @@ a:hover {
   padding: 2rem 0;
 }
 .contact-me__footer .contact-me__div--navigation a {
+  position: relative;
   color: #92cccd;
   padding: 5px 1rem;
-  margin: 5px 0;
-  border-bottom: 3px solid #92cccd;
+  margin: 1rem 0;
 }
 .contact-me__footer .contact-me__div--navigation a:hover {
   color: #31343d;
   background-color: #92cccd;
-  border-bottom: 3px solid #31343d;
   transition: all 0.5s ease-in-out;
   box-shadow: inset 0px 0px 8px #92cccd, 0 0 15px #92cccd;
+}
+.contact-me__footer .contact-me__div--navigation a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #92cccd;
+  bottom: -1rem;
+  left: 0;
+}
+.contact-me__footer .contact-me__div--navigation a:hover::before {
+  width: 0%;
+  transition: all 0.5s ease-in-out;
 }
 @media (min-width: 768px) {
   .contact-me__footer {

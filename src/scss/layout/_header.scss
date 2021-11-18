@@ -20,10 +20,24 @@
         align-items: center;
         padding: 2rem 0 ;
         a {
+            position: relative;
             color: $secondColor;
             padding: 5px 1rem;
-            margin: 5px 0;
-            border-bottom: 3px solid $secondColor;
+            margin: 1rem 0;
+        }
+        a::before {
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background-color: $secondColor;
+            bottom: -1rem;
+            left: 0;
+
+        }
+        a:hover::before {
+            width: 0%;
+            transition: all 0.5s ease-in-out;
         }
     }
     h1 {
@@ -35,13 +49,11 @@
     a:hover {
         color: $fourthColor;
         background-color: $secondColor;
-        border-bottom: 3px solid $fourthColor;
         transition: all 0.5s ease-in-out;
         box-shadow: inset 0px 0px 8px rgba(146,204,205,255), 0 0 15px rgba(146,204,205,255);
     }
     .header__div--background-image {
         background-image: url(../../build/img/cover6.jpg);
-        // background-repeat: no-repeat;
         height: 15rem;
         display: flex;
         justify-content: center;
