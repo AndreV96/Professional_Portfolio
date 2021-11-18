@@ -8,6 +8,12 @@
         border-bottom: thick solid $mainColor; 
         padding: 1rem 1rem 1rem;
     }
+    h3 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 15px;
+    }
     .work__div--webpages-library{
         margin-top: 2rem;
     }
@@ -23,6 +29,7 @@
         align-items: flex-end;
         transition: box-shadow 300ms;
         .work__divs--all-webpages-title-cards {
+            z-index: 1;
             color: $fourthColor;
             background-color: $secondColor;
             padding: 1rem;
@@ -34,9 +41,24 @@
             height: 100%;
         }
     }
+    .work__divs--all-webpages::before {
+        content: '';
+        position: absolute;
+        background-color: rgba(1, 1, 1, 0.5);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+    }
+    .work__divs--all-webpages:hover::before{
+        background-color: rgba(1, 1, 1, 0.1);
+        transition: all 250ms ease-in-out;
+    }
     .work__div--jardines-de-la-sierra-bg-img {
         background-image: url(../../build/img/BG.jpg);
         background-position: bottom;
+        grid-column: 1 / 3;
     }
     .work__div--accesorios-de-boda-bg-img {
         background-image: url(../../build/img/logo_prueba.jpg);
@@ -59,6 +81,11 @@
             h2 {
                 border-bottom: none;
             }
+        } 
+        .work__div--webpages-library {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
         }
         .about-me__div--text, .work__div--webpages-library {
             width: 100%;
