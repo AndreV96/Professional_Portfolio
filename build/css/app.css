@@ -582,6 +582,10 @@ a:hover {
   background-image: url(../../build/img/cheatsheet.jpg);
   background-position: center;
 }
+.main-content__div .work__div--password-generator-bg-img {
+  background-image: url(../../build/img/password_generator_ss2.JPG);
+  background-position: bottom;
+}
 @media (min-width: 768px) {
   .main-content__div .about-me__section, .main-content__div .work__section {
     display: flex;

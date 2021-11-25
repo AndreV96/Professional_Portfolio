@@ -20,7 +20,7 @@ function imagenes(done) {
     const opciones = {
         optimizationLevel: 3
     }
-    src('src/img/**/*.{png,jpg}')
+    src('src/img/**/*.{png,jpg,JPG}')
         .pipe(cache(imagemin(opciones)))
         .pipe(dest('build/img'))
     done();
@@ -32,7 +32,7 @@ function versionWebp(done) {
         quality: 50
     };
 
-    src('src/img/**/*.{png,jpg}')
+    src('src/img/**/*.{png,jpg,JPG}')
         .pipe(webp(opciones))
         .pipe(dest('build/img'))
     done();
@@ -44,7 +44,7 @@ function versionAvif(done) {
         quality: 50
     };
 
-    src('src/img/**/*.{png,jpg}')
+    src('src/img/**/*.{png,jpg,JPG}')
         .pipe(avif(opciones))
         .pipe(dest('build/img'))
     done();

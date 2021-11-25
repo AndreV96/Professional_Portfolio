@@ -71,6 +71,10 @@
         background-image: url(../../build/img/cheatsheet.jpg);   
         background-position: center;
     }
+    .work__div--password-generator-bg-img {
+        background-image: url(../../build/img/password_generator_ss2.JPG);   
+        background-position: bottom;
+    }
     @include tablet {
         .about-me__section, .work__section {
             display: flex;
