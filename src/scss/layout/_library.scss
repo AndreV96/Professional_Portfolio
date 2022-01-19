@@ -58,6 +58,21 @@
         background-color: rgba(1, 1, 1, 0.1);
         transition: all 250ms ease-in-out;
     }
+    .github-btn {
+        color: $thirdColor;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        background-color: $secondColor;
+        border: none;
+        border-radius: 2rem;
+        padding: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .github-btn:hover {
+        box-shadow: inset 0px 0px 8px rgba(146,204,205,255), 0 0 15px rgba(146,204,205,255);
+    }
     .work__div--moviez-bg-img {
         background-image: url(../../build/img/moviez_homepage.png);
         background-position: top;

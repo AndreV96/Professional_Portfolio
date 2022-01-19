@@ -569,6 +569,21 @@ a:hover {
   background-color: rgba(1, 1, 1, 0.1);
   transition: all 250ms ease-in-out;
 }
+.main-content__div .github-btn {
+  color: #424949;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: #92cccd;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.main-content__div .github-btn:hover {
+  box-shadow: inset 0px 0px 8px #92cccd, 0 0 15px #92cccd;
+}
 .main-content__div .work__div--moviez-bg-img {
   background-image: url(../../build/img/moviez_homepage.png);
   background-position: top;
