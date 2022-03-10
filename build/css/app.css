@@ -584,10 +584,18 @@ a:hover {
 .main-content__div .github-btn:hover {
   box-shadow: inset 0px 0px 8px #92cccd, 0 0 15px #92cccd;
 }
+.main-content__div .work__div--note-taker-bg-img {
+  background-image: url(../../build/img/Note_Taker.png);
+  background-position: top;
+}
+.main-content__div .work__div--whistle-bg-img {
+  background-image: url(../../build/img/Whistle.png);
+  background-position: top;
+  grid-column: 1/3;
+}
 .main-content__div .work__div--moviez-bg-img {
   background-image: url(../../build/img/moviez_homepage.png);
   background-position: top;
-  grid-column: 1/3;
 }
 .main-content__div .work__div--weather-dashboard-bg-img {
   background-image: url(../../build/img/weather_dashboard.png);

@@ -1,110 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proffesional Portfolio AVL</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
     <header>
-        <section class="header__section">
-            <div class="header__div--main-heading-and-navigation">
-                <h1>André Vega</h1>                
-                <picture class="header__picture">
-                    <source srcset="build/img/foto.avif" type="image/avif">
-                    <source srcset="build/img/foto.webp" type="image/webp">
-                    <img loading="lazy" width="200" height="300" src="build/img/foto.jpg" alt="">
-                </picture>
-                <nav class="header__nav">                
-                    <a href="#about-me">About Me</a>
-                    <a href="#work">Work</a>
-                    <a href="#contact-me">Contact Me</a>
-                </nav>
-            </div>
-            <div class="header__div--background-image">
-                <h2>“It is not enough for code to work.”  <br><span class="header__span--main-quote"> -Robert C. Martin</span></h2>
-            </div>
-        </section>
-    </header>   
+      <section class="header__section">
+        <div class="header__div--main-heading-and-navigation">
+          <h1>André Vega</h1>
+          <picture class="header__picture">
+            <source srcset="build/img/foto.avif" type="image/avif" />
+            <source srcset="build/img/foto.webp" type="image/webp" />
+            <img
+              loading="lazy"
+              width="200"
+              height="300"
+              src="build/img/foto.jpg"
+              alt=""
+            />
+          </picture>
+          <nav class="header__nav">
+            <a href="#about-me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact-me">Contact Me</a>
+          </nav>
+        </div>
+        <div class="header__div--background-image">
+          <h2>
+            “It is not enough for code to work.” <br /><span
+              class="header__span--main-quote"
+            >
+              -Robert C. Martin</span
+            >
+          </h2>
+        </div>
+      </section>
+    </header>
     <div class="main-content__div">
-        <section id="about-me" class="about-me__section container">
-            <div class="about-me__div--section-heading">   
-                <h2>About Me</h2>
+      <section id="about-me" class="about-me__section container">
+        <div class="about-me__div--section-heading">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-me__div--text">
+          <p>
+            Welcome to my Proffesional Portfolio, here you will be able to find
+            all proyects I have created from scratch. Some of them were created
+            for an assignment like a homework or an activity from the Boot Camp
+            while others where made with the purpose of practicing my web
+            developer skills and expangind this portfolio.
+          </p>
+          <p>
+            My name is André Vega Lederer, I've been studying Computer Sciences
+            in TecMilenio for the last 1.5 years. At the same time I've been
+            learning Web Development skills to become a Full-Stack programmer.
+            I've almost completed a self-taught course in Udemy where I have
+            learned HTML, CSS, JavaScript, Sass and Gulp. Right now I am taking
+            a Coding Boot Camp Course in the Tecnológico de Monterrey that will
+            last 6 months with the purpose of maturing the skills needed to
+            create a proffesional portfolio and land my first job as a web
+            developer.
+          </p>
+        </div>
+      </section>
+
+      <section id="work" class="work__section container">
+        <div class="work__div--section-heading">
+          <h2>Work</h2>
+        </div>
+        <div class="work__div--webpages-library">
+          <div class="work__divs--all-webpages work__div--whistle-bg-img">
+            <a
+              class="work__a--links-to-webpages"
+              href="https://limitless-plateau-15055.herokuapp.com/"
+            ></a>
+            <a
+              href="https://github.com/AndreV96/project-2"
+              ><button class="github-btn">GitHub</button></a
+            >
+            <div class="work__divs--all-webpages-title-cards">
+              <h3>"Whistle" Bootcamp Project</h3>
+              <p>HTML/CSS/JavaScript/NodeJs/Express/MySql/</p>
             </div>
-            <div class="about-me__div--text">
-                <p>Welcome to my Proffesional Portfolio, here you will be able to find all proyects I have created from scratch. Some of them were created for an assignment like a homework or an activity from the Boot Camp while others where made with the purpose of practicing my web developer skills and expangind this portfolio. </p>
-                <p>My name is André Vega Lederer, I've been studying Computer Sciences in TecMilenio for the last 1.5 years. At the same time I've been learning Web Development skills to become a Full-Stack programmer. I've almost completed a self-taught course in Udemy where I have learned HTML, CSS, JavaScript, Sass and Gulp. Right now I am taking a Coding Boot Camp Course in the Tecnológico de Monterrey that will last 6 months with the purpose of maturing the skills needed to create a proffesional portfolio and land my first job as a web developer.</p>
+          </div>
+          <div class="work__divs--all-webpages work__div--moviez-bg-img">
+            <a
+              class="work__a--links-to-webpages"
+              href="https://enrique-rojas-villegas.github.io/Movie-Search_Engine/"
+            ></a>
+            <a
+              href="https://github.com/Enrique-Rojas-Villegas/Movie-Search_Engine.git"
+              ><button class="github-btn">GitHub</button></a
+            >
+            <div class="work__divs--all-webpages-title-cards">
+              <h3>"Moviez" Bootcamp Project</h3>
+              <p>HTML/CSS/JavaScript</p>
             </div>
-        </section>
-    
-        <section id="work" class="work__section container">
-            <div class="work__div--section-heading">   
-                <h2>Work</h2>
+          </div>
+          <div
+            class="work__divs--all-webpages work__div--note-taker-bg-img"
+          >
+            <a
+              class="work__a--links-to-webpages"
+              href="https://morning-lowlands-78728.herokuapp.com/"
+            ></a>
+            <a href="https://github.com/AndreV96/11_Note_Taker_AVL.git"
+              ><button class="github-btn">GitHub</button></a
+            >
+            <div class="work__divs--all-webpages-title-cards">
+              <h3>Note Taker</h3>
+              <p>HTML/CSS/JavaScript/NodeJs/Express</p>
             </div>
-            <div class="work__div--webpages-library">
-                <div class="work__divs--all-webpages work__div--moviez-bg-img">
-                    <a class="work__a--links-to-webpages" href="https://enrique-rojas-villegas.github.io/Movie-Search_Engine/"></a>
-                    <a href="https://github.com/Enrique-Rojas-Villegas/Movie-Search_Engine.git"><button class="github-btn">GitHub</button></a>
-                    <div class="work__divs--all-webpages-title-cards">                        
-                        <h3>"Moviez" Bootcamp Project</h3>
-                        <p>HTML/CSS/JavaScript</p>
-                    </div>
-                </div>
-                <div class="work__divs--all-webpages work__div--weather-dashboard-bg-img">
-                    <a class="work__a--links-to-webpages" href="https://andrev96.github.io/06_Weather_Dashboard_AVL/"></a>
-                    <a href="https://github.com/AndreV96/06_Weather_Dashboard_AVL.git"><button class="github-btn">GitHub</button></a>
-                    <div class="work__divs--all-webpages-title-cards">                       
-                        <h3>Weather Dashboard</h3>
-                        <p>HTML/CSS/JavaScript</p>
-                    </div>
-                </div>
-                <div class="work__divs--all-webpages work__div--work-day-bg-img">
-                    <a class="work__a--links-to-webpages" href="https://andrev96.github.io/05_Work_Day_Scheduler_AVL/"></a>
-                    <a href="https://github.com/AndreV96/05_Work_Day_Scheduler_AVL.git"><button class="github-btn">GitHub</button></a>
-                    <div class="work__divs--all-webpages-title-cards">                       
-                        <h3>Work Day Scheduler</h3>
-                        <p>HTML/CSS/JavaScript</p>
-                    </div>
-                </div>
-                <div class="work__divs--all-webpages work__div--code-quiz-bg-img">
-                    <a class="work__a--links-to-webpages" href="https://andrev96.github.io/04_Code_Quiz_AVL/"></a>
-                    <a href="https://github.com/AndreV96/04_Code_Quiz_AVL.git"><button class="github-btn">GitHub</button></a>
-                    <div class="work__divs--all-webpages-title-cards">                       
-                        <h3>Code Quiz</h3>
-                        <p>HTML/CSS/JavaScript</p>
-                    </div>
-                </div>
-                <div class="work__divs--all-webpages work__div--password-generator-bg-img">
-                    <a class="work__a--links-to-webpages" href="https://andrev96.github.io/03_Password_Generator_AVL/"></a>
-                    <a href="https://github.com/AndreV96/03_Password_Generator_AVL.git"><button class="github-btn">GitHub</button></a>
-                    <div class="work__divs--all-webpages-title-cards">
-                        <h3>Password Generator</h3>
-                        <p>HTML/CSS/JavaScript</p>                  
-                    </div>
-                </div>
+          </div>
+          <div
+            class="work__divs--all-webpages work__div--weather-dashboard-bg-img"
+          >
+            <a
+              class="work__a--links-to-webpages"
+              href="https://andrev96.github.io/06_Weather_Dashboard_AVL/"
+            ></a>
+            <a href="https://github.com/AndreV96/06_Weather_Dashboard_AVL.git"
+              ><button class="github-btn">GitHub</button></a
+            >
+            <div class="work__divs--all-webpages-title-cards">
+              <h3>Weather Dashboard</h3>
+              <p>HTML/CSS/JavaScript</p>
             </div>
-        </section>
+          </div>
+          <div class="work__divs--all-webpages work__div--work-day-bg-img">
+            <a
+              class="work__a--links-to-webpages"
+              href="https://andrev96.github.io/05_Work_Day_Scheduler_AVL/"
+            ></a>
+            <a href="https://github.com/AndreV96/05_Work_Day_Scheduler_AVL.git"
+              ><button class="github-btn">GitHub</button></a
+            >
+            <div class="work__divs--all-webpages-title-cards">
+              <h3>Work Day Scheduler</h3>
+              <p>HTML/CSS/JavaScript</p>
+            </div>
+          </div>
+          <div class="work__divs--all-webpages work__div--code-quiz-bg-img">
+            <a
+              class="work__a--links-to-webpages"
+              href="https://andrev96.github.io/04_Code_Quiz_AVL/"
+            ></a>
+            <a href="https://github.com/AndreV96/04_Code_Quiz_AVL.git"
+              ><button class="github-btn">GitHub</button></a
+            >
+            <div class="work__divs--all-webpages-title-cards">
+              <h3>Code Quiz</h3>
+              <p>HTML/CSS/JavaScript</p>
+            </div>
+          </div>
+          <div
+            class="work__divs--all-webpages work__div--password-generator-bg-img"
+          >
+            <a
+              class="work__a--links-to-webpages"
+              href="https://andrev96.github.io/03_Password_Generator_AVL/"
+            ></a>
+            <a href="https://github.com/AndreV96/03_Password_Generator_AVL.git"
+              ><button class="github-btn">GitHub</button></a
+            >
+            <div class="work__divs--all-webpages-title-cards">
+              <h3>Password Generator</h3>
+              <p>HTML/CSS/JavaScript</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    
+
     <footer id="contact-me" class="contact-me__footer">
-        <div class="contact-me__div--navigation">
-            <nav class="footer__nav">
-                <a href="https://wa.me/+524422052403">442.205.2403</a>
-                <a href="mailto:ventaslederer@hotmail.com">ventaslederer@hotmail.com</a>
-                <a href="https://github.com/AndreV96">GitHub</a>
-                <a href="https://www.linkedin.com/in/andre-vega-lederer/">LinkedIn</a>
-                <a href="https://drive.google.com/file/d/1vx5zUjS0ayEEjhHHmwIV33B3zxcC7hKT/view?usp=sharing">Resume</a>
-            </nav>
-        </div>
-        <div class="contact-me__div--heading">   
-            <h2>Contact Me</h2>
-        </div>
+      <div class="contact-me__div--navigation">
+        <nav class="footer__nav">
+          <a href="https://wa.me/+524422052403">442.205.2403</a>
+          <a href="mailto:ventaslederer@hotmail.com"
+            >ventaslederer@hotmail.com</a
+          >
+          <a href="https://github.com/AndreV96">GitHub</a>
+          <a href="https://www.linkedin.com/in/andre-vega-lederer/">LinkedIn</a>
+          <a
+            href="https://drive.google.com/file/d/1vx5zUjS0ayEEjhHHmwIV33B3zxcC7hKT/view?usp=sharing"
+            >Resume</a
+          >
+        </nav>
+      </div>
+      <div class="contact-me__div--heading">
+        <h2>Contact Me</h2>
+      </div>
     </footer>
     <script src="build/js/app.js"></script>
-</body>   
+  </body>
 </html>
