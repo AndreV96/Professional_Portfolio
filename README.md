@@ -1,6 +1,6 @@
 # Professional Portfolio
 
-* Webpage link: https://andrev96.github.io/02_Professional_Portfolio_AVL/
+* Webpage link: https://andrev96.github.io/Professional_Portfolio/
 
 * GitHub repository link: https://github.com/AndreV96/02_Professional_Portfolio_AVL.git
 
