@@ -406,6 +406,10 @@ a:hover {
   gap: 2.5rem;
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
 .header__section .header__div--main-heading-and-navigation {
   background-color: #31343d;
 }
@@ -533,7 +537,7 @@ a:hover {
 }
 .main-content__div .work__divs--all-webpages {
   position: relative;
-  height: 20rem;
+  height: 25rem;
   padding-bottom: 2rem;
   margin-bottom: 1rem;
   background-image: url(../../build/img/cover1.jpg);
@@ -545,9 +549,13 @@ a:hover {
 }
 .main-content__div .work__divs--all-webpages .work__divs--all-webpages-title-cards {
   z-index: 1;
+  width: 100%;
   color: #31343d;
   background-color: #92cccd;
   padding: 1rem;
+  margin-right: 1rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   display: inline-block;
 }
 .main-content__div .work__divs--all-webpages .work__a--links-to-webpages {
@@ -569,14 +577,21 @@ a:hover {
   background-color: rgba(1, 1, 1, 0.1);
   transition: all 250ms ease-in-out;
 }
+.main-content__div .work__p--all-webpages-tools {
+  margin: 0;
+}
+.main-content__div .work__p--all-webpages-descriptions {
+  padding-top: 5px;
+  margin: 0;
+}
 .main-content__div .github-btn {
   color: #424949;
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  top: 1rem;
+  left: 1rem;
   background-color: #92cccd;
   border: none;
-  border-radius: 2rem;
+  border-radius: 1rem;
   padding: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -625,7 +640,7 @@ a:hover {
   background-image: url(../../build/img/BG.jpg);
   background-position: bottom;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .main-content__div .about-me__section, .main-content__div .work__section {
     display: flex;
     justify-content: space-between;

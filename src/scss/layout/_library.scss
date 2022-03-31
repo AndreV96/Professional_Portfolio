@@ -21,7 +21,7 @@
     }
     .work__divs--all-webpages {
         position: relative;
-        height: 20rem;
+        height: 25rem;
         padding-bottom: 2rem;
         margin-bottom: 1rem;
         background-image: url(../../build/img/cover1.jpg);
@@ -32,9 +32,13 @@
         transition: box-shadow 300ms;
         .work__divs--all-webpages-title-cards {
             z-index: 1;
+            width: 100%;
             color: $fourthColor;
             background-color: $secondColor;
             padding: 1rem;
+            margin-right: 1rem;
+            border-top-right-radius: .5rem;
+            border-bottom-right-radius: .5rem;
             display: inline-block;
         }
         .work__a--links-to-webpages {
@@ -58,14 +62,22 @@
         background-color: rgba(1, 1, 1, 0.1);
         transition: all 250ms ease-in-out;
     }
+    .work__p--all-webpages-tools {
+      // padding: 0;
+      margin: 0;
+    }
+    .work__p--all-webpages-descriptions {
+      padding-top: 5px;
+      margin: 0;
+    }
     .github-btn {
         color: $thirdColor;
         position: absolute;
-        bottom: 5px;
-        right: 5px;
+        top: 1rem;
+        left: 1rem;
         background-color: $secondColor;
         border: none;
-        border-radius: 2rem;
+        border-radius: 1rem;
         padding: 1rem;
         font-weight: bold;
         cursor: pointer;
@@ -116,7 +128,8 @@
         background-image: url(../../build/img/BG.jpg);
         background-position: bottom;
     }
-    @include tablet {
+    
+    @include laptop {
         .about-me__section, .work__section {
             display: flex;
             justify-content: space-between;
